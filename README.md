@@ -1,5 +1,9 @@
 # Alpine Cron Docker #
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/scalified/alpine-squash-tm.svg)](https://hub.docker.com/r/scalified/alpine-squash-tm)
+[![](https://images.microbadger.com/badges/image/scalified/alpine-cron.svg)](https://microbadger.com/images/scalified/alpine-cron)
+[![](https://images.microbadger.com/badges/version/scalified/alpine-cron.svg)](https://microbadger.com/images/scalified/alpine-cron)
+
 ## Description
 
 This repository is used for building a [**Docker**](https://www.docker.com) image containing [**Cron**](https://en.wikipedia.org/wiki/Cron) running on [**Alpine Linux**](https://alpinelinux.org/)
