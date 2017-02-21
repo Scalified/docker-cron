@@ -1,6 +1,6 @@
 # Alpine Cron Docker #
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/scalified/alpine-squash-tm.svg)](https://hub.docker.com/r/scalified/alpine-squash-tm)
+[![Docker Pulls](https://img.shields.io/docker/pulls/scalified/alpine-cron.svg)](https://hub.docker.com/r/scalified/alpine-cron)
 [![](https://images.microbadger.com/badges/image/scalified/alpine-cron.svg)](https://microbadger.com/images/scalified/alpine-cron)
 [![](https://images.microbadger.com/badges/version/scalified/alpine-cron.svg)](https://microbadger.com/images/scalified/alpine-cron)
 
