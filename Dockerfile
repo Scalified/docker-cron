@@ -13,4 +13,7 @@ VOLUME $PERIODIC_DIR
 
 RUN touch $CRON_STDOUT_FILE $CRON_STDERR_FILE
 
-ENTRYPOINT supervisord -c /etc/supervisord.conf && tail -f $CRON_STDOUT_FILE $CRON_STDERR_FILE
+COPY entrypoint.sh /entrypoint.sh
+
+ENTRYPOINT /entrypoint.sh
+
