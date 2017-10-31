@@ -6,7 +6,8 @@
 
 ## Description
 
-This repository is used for building a [**Docker**](https://www.docker.com) image containing [**Cron**](https://en.wikipedia.org/wiki/Cron) running on [**Alpine Linux**](https://alpinelinux.org/)
+This repository is used for building a Docker image containing [**Cron**](https://en.wikipedia.org/wiki/Cron) 
+running on [**Alpine Linux**](https://alpinelinux.org/)
 
 ## Dockerhub
 
@@ -32,14 +33,10 @@ This repository is used for building a [**Docker**](https://www.docker.com) imag
 
 #### Running Docker Image
 
-* Pulling from **Dockerhub**:  
-  `docker run -it scalified/alpine-cron /bin/sh`
-
-* Launching the built image with <tag> tag:  
-  `docker run -it <tag> /bin/sh`
+`docker run -it scalified/alpine-cron /bin/sh`
 
 ## Scalified Links
 
 * [Scalified](http://www.scalified.com)
 * [Scalified Official Facebook Page](https://www.facebook.com/scalified)
-* <a href="mailto:info@scalified.com?subject=[Squash TM Docker Image]: Proposals And Suggestions">Scalified Support</a>
+* Scalified Support - info@scalified.com
