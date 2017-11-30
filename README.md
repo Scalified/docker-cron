@@ -19,11 +19,17 @@ running on [**Alpine Linux**](https://alpinelinux.org/)
 |--------|---------|
 | Alpine | 3.4     |
 
+## Supported build arguments
+
+* `CRONTABS_DIR` - the directory where system wide crontab is located (default `/etc/crontabs`)
+* `PERIODIC_DIR` - the top level directory containing daily, weekly, monthly, and security	subdirectories which contain standard system periodic executables (default `/etc/periodic`)
+* `CRON_STDOUT_FILE` - the log file used to output cron's stdout
+* `CRON_STDERR_FILE` - the log file used to output cron's stderr
+
 ## Volumes
 
-* **`/etc/supervisor.d`**
-* **`/var/spool/cron`**
-* **`/etc/periodic`**
+* **`/etc/crontabs`**, unless `CRONTABS_DIR` argument overrides it
+* **`/etc/periodic`**, unless `PERIODIC_DIR` argument overrides it
 
 ### How-To
 
