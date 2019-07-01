@@ -15,9 +15,10 @@ running on [**Alpine Linux**](https://alpinelinux.org/)
 
 ## Version
 
-| #      | Version |
-|--------|---------|
-| Alpine | 3.4     |
+| Tag         | Alpine Version |
+|-------------|----------------|
+| latest, 3.9 | 3.9            |
+| 3.4         | 3.4            |
 
 ## Supported build arguments
 
