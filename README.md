@@ -46,5 +46,5 @@ running on [**Alpine Linux**](https://alpinelinux.org/)
 
 * [Scalified](http://www.scalified.com)
 * [Scalified Official Facebook Page](https://www.facebook.com/scalified)
-* [Scalified Support](info@scalified.com)
+* <a href="mailto:info@scalified.com?subject=[Docker Alpine Cron]: Proposals And Suggestions">Scalified Support</a>
 
