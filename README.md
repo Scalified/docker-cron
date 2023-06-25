@@ -15,10 +15,11 @@ running on [**Alpine Linux**](https://alpinelinux.org/)
 
 ## Version
 
-| Tag         | Alpine Version |
-|-------------|----------------|
-| latest, 3.9 | 3.9            |
-| 3.4         | 3.4            |
+| Tag            | Alpine Version |
+|----------------|----------------|
+| latest, 3.18.2 | 3.18.2         |
+| 3.9            | 3.9            |
+| 3.4            | 3.4            |
 
 ## Supported build arguments
 
@@ -36,7 +37,7 @@ running on [**Alpine Linux**](https://alpinelinux.org/)
 
 #### Building Docker Image
 
-`docker build . -t <tag>`
+`docker build . -t scalified/alpine-cron:<tag>`
 
 #### Running Docker Image
 
