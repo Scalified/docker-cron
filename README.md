@@ -17,7 +17,8 @@ running on [**Alpine Linux**](https://alpinelinux.org/)
 
 | Tag            | Alpine Version |
 |----------------|----------------|
-| latest, 3.18.2 | 3.18.2         |
+| latest, 3.20.0 | 3.20.0         |
+| 3.18.2         | 3.18.2         |
 | 3.9            | 3.9            |
 | 3.4            | 3.4            |
 

@@ -1,4 +1,4 @@
-FROM scalified/alpine-supervisor:3.18.2
+FROM scalified/alpine-supervisor:3.20.0
 
 ARG PERIODIC_DIR=/etc/periodic
 
