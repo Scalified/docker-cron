@@ -23,7 +23,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: scalified/alpine-cron
+          images: scalified/cron
           tags: |
             type=raw,value=alpine
             type=raw,value=latest
@@ -33,5 +33,8 @@ jobs:
         with:
           context: .
           push: true
+          build-args:
+            ALPINE_VERSION=${{ github.ref_type == 'tag' && github.ref_name || 'latest' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+
