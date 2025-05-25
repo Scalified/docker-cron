@@ -1,25 +1,16 @@
-ARG ALPINE_VERSION="latest"
+FROM scalified/supervisor
 
-FROM scalified/supervisor:${ALPINE_VERSION}
+LABEL maintainer="Scalified <scalified@gmail.com>"
 
 ARG CRONTABS_DIR
 ENV CRONTABS_DIR ${CRONTABS_DIR:-/etc/crontabs}
 
-ARG CRON_STDOUT_FILE
-ENV CRON_STDOUT_FILE ${CRON_STDOUT_FILE:-/var/log/crond-stdout.log}
+ENV CRONTAB $CRONTABS_DIR/root
 
-ARG CRON_STDERR_FILE
-ENV CRON_STDERR_FILE ${CRON_STDERR_FILE:-/var/log/crond-stderr.log}
+RUN echo "BUSYBOX (CROND) VERSION: $(busybox | head -n 1)"
 
-COPY config/supervisor-cron.ini $SUPERVISOR_CONF_DIR
+COPY etc/supervisor.d/ $SUPERVISOR_CONF_DIR/
 
 VOLUME $CRONTABS_DIR
-
 VOLUME /etc/periodic
-
-RUN touch $CRON_STDOUT_FILE $CRON_STDERR_FILE
-
-COPY entrypoint.sh /entrypoint.sh
-
-ENTRYPOINT /entrypoint.sh
 

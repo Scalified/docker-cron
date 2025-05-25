@@ -1,34 +1,24 @@
-# Docker Cron
+# CRON Docker Image
 
+[![Release](https://img.shields.io/github/v/release/Scalified/docker-cron?style=flat-square)](https://github.com/Scalified/docker-cron/releases/latest)
 [![Docker Pulls](https://img.shields.io/docker/pulls/scalified/cron.svg)](https://hub.docker.com/r/scalified/cron)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Scalified/docker-cron/blob/master/LICENSE)
 
-## Description
+## Overview
 
-This repository is used for building a [**Docker**](https://www.docker.com) image containing [**Cron**](https://en.wikipedia.org/wiki/Cron)
+[**Alpine**](https://www.alpinelinux.org/) [**Docker**](https://www.docker.com/) image running [**Cron**](https://en.wikipedia.org/wiki/Cron).
+Built on top of the [**Scalified Supervisor**](https://github.com/Scalified/docker-supervisor) image
 
-## Dockerhub
+## Usage
 
-**`docker pull scalified/cron`**
-
-## Supported build arguments
-
-* `CRONTABS_DIR` - the directory where system wide crontab is located (default `/etc/crontabs`)
-* `CRON_STDOUT_FILE` - the log file used to output cron's stdout
-* `CRON_STDERR_FILE` - the log file used to output cron's stderr
-
-## Volumes
-
-* **`/etc/crontabs`**, unless `CRONTABS_DIR` argument overrides it
-
-### How-To
-
-#### Building Docker Image
-
-`docker build . -t scalified/cron:<tag>`
-
-#### Running Docker Image
-
-`docker run -it scalified/cron /bin/sh`
+```bash
+docker run \
+    --name cron \
+    -v crontab:/etc/crontabs/root:ro \
+    --detach \
+    --restart always \
+    scalified/cron
+```
 
 ## Scalified Links
 
